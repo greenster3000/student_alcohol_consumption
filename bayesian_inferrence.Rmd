@@ -1,0 +1,41 @@
+---
+title: "Student Alcohol Consumption"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r message=FALSE, warning=FALSE}
+library(rethinking)
+```
+
+## Read in data and missing cases
+```{r}
+d <- read.csv("student-mat.csv")
+nrow(d)
+nrow(d[complete.cases(d), ])
+```
+Nothing missing and 395 rows
+
+## Columns available
+```{r}
+head(d, 2)
+```
+
+Let's see if there's a material difference in final grade according to sex
+
+For simplicity, let's look at final grade (G3)
+```{r}
+
+```
+
+```{r}
+m1 <- map(
+  alist(
+    
+  )
+)
+```
+
